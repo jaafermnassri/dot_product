@@ -1,0 +1,13 @@
+FUNCTION ort(v1:array v2:array ps:integer) {
+FOR (i=0 , i<v1.length , i++)
+ps = ps + v1[i]*v2[i]
+END FOR
+return ps }
+ALGORITHM orthogonaux
+ps=0:INTEGER;
+ps=ort(v1,v2,ps) 
+if (ps=0)
+return "orthogonaux"
+else
+return "non orthogonaux"
+END
